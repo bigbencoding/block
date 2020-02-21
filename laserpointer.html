@@ -12,7 +12,7 @@
   <div class="header">
     <center>
     <a href="/main/"><img src="/main/textlogo.png" width="400" style="padding:15px;"></a>
-    <h1>Whack A Mole</h1>
+    <h1>Laser Pointer</h1>
     </center>
     <script src="/main/script.js">
     </script>
@@ -24,14 +24,17 @@
     <h1 class="biggertext">Instructions</h1>
     <h1 class="text">In this project, try to dodge the cat!</h1>
     <p class="text">First, duplicate all the code in the "Move Around" project and put it in the laser. Replace the "forever" block with the "repeat until ()" block from the <code>Control</code> tab and add a "go to random position" block from the <code>Motion</code> tab on top of the "repeat until ()" block.</p>
-    <img src="/iamges/example5.png" width="80%">
-    <p class="text">Next, click on the cat icon on the right of the screen. Now, </p>
+    <img src="/images/example5.png" width="80%">
+    <p class="text">Next, click on the cat icon on the right of the screen. Now, drag a "when 🚩 clicked" block onto the workspace. Under that, go to the <code>Motion</code> tab and place a "go to random position" block. Go to the <code>Control</code> tab and place a "repeat until ()". Inside the "repeat until ()" block, place a "point towards(mouse pointer)" block and change it to "point towards (laser)". Under the "point towards (laser)" block, place a "move 10 steps" block and change the value to 3. Finally, go to the <code>Sensing</code> tab and drag the "touching (mouse-pointer)" block into the "repeat until ()" block. Change the value to laser.</p>
+    <img src="/images/example6.png" width="80%">
+    <p class="text">Finally, click on the laser icon on the right of the screen, and go to the <code>Sensing</code> tab. Drag the "touching (mouse-pointer)" block into the "repeat until ()" block. Change the value to cat.</p> 
+    <img src="/images/example7.png" width="80%">
     <h1 class="biggertext">You Finished!</h1>
     <h2 class="text">Try pressing the green flag. See your hard work play before you eyes!</h2>
   </center>
   <h1 class="text" style="margin:20px;">Code Explained</h1>
   <div class="explain">
-    The <code>forever</code> block loops the code forever, so the program never ends. This makes it so the square can be controlled forever until you kill the program. This is called a <i>loop</i>. Loops run things for a specific amount of repeats or until it meets the requirements. The <code>if</code> block asks "if (statement) than (result)". That means if the statement is true, run the things inside of it. An <code>if</code> block is a type of <i>conditional</i>. A conditional takes a statement and if it makes the requirements, it runs the code inside. We can use this to ask if the users are pressing the arrow keys.
+      The "repeat until ()" block is a type of <code>loop</code>. This time, it takes a conditional. The loop goes on until the cat touches the laser and the other way around. When that happens, the program gets killed. Another way of saying this is it gets <code>terminated</code>. The "go to random position" block brings the cat and the laser somewhere random on the map, so there are more possibilites of playing the game. The cat is told to always point at the laser (except if the touched) and move forward at the same time. This results of the cat always moving toward the laser.
   </div>
   <br>
   <center>
